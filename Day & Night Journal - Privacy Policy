@@ -1,0 +1,75 @@
+# Privacy Policy — Day & Night Journal
+
+_Last updated: June 27, 2026_
+
+Day & Night Journal ("the app," "we," "us") is built to be private by design. This
+policy explains exactly what the app does and does not do with your information.
+
+## The short version
+
+We do not have a server. We never receive, see, store, sell, share, mine, or use your
+journal to train anything. Your data lives on your device and in **your own private
+iCloud account** — nowhere else.
+
+## Information the app uses
+
+**Your journal entries.** Everything you type or select — prompts, notes, checklists,
+moods, water counts, and any custom fields you create — is stored locally on your
+device using Apple's on-device database, and synced across your own Apple devices
+through your private iCloud (CloudKit) account. We have no access to this iCloud
+container; only you do, through your Apple ID.
+
+**Apple Health data (optional, read-only).** If you choose to enable it, the app reads
+your sleep times, step count, and exercise minutes from Apple Health to automatically
+fill in the matching journal fields. This access is **read-only** — the app never
+writes to Apple Health. These values become entries in your own private journal and are
+synced only through your private iCloud, exactly like anything else you enter. They are
+never sent to us or any third party, and are **never used for advertising, marketing, or
+data mining**. You can turn Health off at any time in the iOS Settings app, and you can
+decline it entirely; the app works fully without it.
+
+**Sign in with Apple.** The app uses Sign in with Apple solely to gate access to your
+journal. We store only the anonymous, stable user identifier that Apple provides, on
+your device. We do not collect your name or email, we operate no account server, and we
+store no authentication tokens anywhere off your device.
+
+**Notifications.** The app schedules a local weekly reminder on your device. These are
+local notifications only — no push server is involved and no information leaves your
+device to deliver them.
+
+## What we do NOT collect
+
+- No analytics, tracking, advertising identifiers, or third-party SDKs.
+- No usage telemetry sent to us.
+- No location data.
+- Nothing transmitted to any server operated by us — because we operate none.
+
+## Data sharing
+
+We do not share your information with anyone, because we never have it. Your data syncs
+only through Apple's iCloud under your own Apple ID, governed by
+[Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
+
+## Deleting your data
+
+You are always in control:
+
+- **Sign out** (in the app's About screen) returns you to the sign-in screen while
+  leaving your journal safe in your iCloud.
+- **Delete account & all data** (in the app's About screen) permanently erases every
+  entry and custom field from your device and your iCloud. This cannot be undone.
+- You can also delete the app and remove its iCloud data via iOS Settings → your name →
+  iCloud → Manage Account Storage.
+
+## Children
+
+The app is not directed at children and collects no personal information for any user.
+
+## Changes to this policy
+
+If this policy changes, the updated version will be posted at this same URL with a new
+"Last updated" date.
+
+## Contact
+
+Questions about your privacy? Contact us at: **adaptiveagingsolutions@gmail.com**
