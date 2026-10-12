@@ -1,6 +1,6 @@
 # Privacy Policy — Day & Night Journal
 
-_Last updated: August 22, 2026_
+_Last updated: October 12, 2026_
 
 Day & Night Journal ("the app," "we," "us") is built to be private by design. This
 policy explains exactly what the app does and does not do with your information.
@@ -20,13 +20,21 @@ through your private iCloud (CloudKit) account. We have no access to this iCloud
 container; only you do, through your Apple ID.
 
 **Apple Health data (optional, read-only).** If you choose to enable it, the app reads
-your sleep times, step count, and exercise minutes from Apple Health to automatically
-fill in the matching journal fields. This access is **read-only** — the app never
-writes to Apple Health. These values become entries in your own private journal and are
-synced only through your private iCloud, exactly like anything else you enter. They are
-never sent to us or any third party, and are **never used for advertising, marketing, or
-data mining**. You can turn Health off at any time in the iOS Settings app, and you can
-decline it entirely; the app works fully without it.
+your sleep times, step count, exercise minutes, heart rate, resting heart rate,
+workouts, time in daylight, date of birth, and heart rate variability (HRV) from Apple
+Health. This access is **read-only** — the app never writes to Apple Health. What the
+app keeps from those reads stays on your device or in your own private iCloud. Journal
+fields filled from Health sync like anything else you enter. Protocols lines are worked
+out on this device and kept on this device. None of this is sent to us, and it is
+**never used for advertising, marketing, or data mining**. You can turn Health off at
+any time in the iOS Settings app, and you can decline it entirely; the app works fully
+without it.
+
+**Apple Weather and approximate location (optional).** If you turn Protocols on and
+allow location, the app sends an approximate location (rounded) to Apple Weather to get
+cloud cover for the morning-light target. That location is not stored in your journal
+and is not sent to us. With no location, or no answer from Apple Weather, the sky stays
+unknown.
 
 **Sign in with Apple.** The app uses Sign in with Apple solely to gate access to your
 journal. We store only the anonymous, stable user identifier that Apple provides, on
@@ -38,19 +46,35 @@ reminders to journal, and a weekly look back, on your device. These are local
 notifications only — no push server is involved, their text is written on your device, and
 no information leaves your device to deliver them.
 
-**Patterns (optional, and off until you turn it on).** If you turn on "Patterns" in the
-Insights tab, the app compares numbers you have already written — sleep, mood, steps,
-habits — and tells you when two of them tended to move together. This is arithmetic,
-worked out on your device, over your own journal. No language model is involved, nothing
-is uploaded, no account is used, and it asks for no new permissions. You can turn it off
-again in the same place. It describes what happened together — never why — and it is not
-advice.
+**Evening voice notes (optional).** If you record a voice note, the audio and its
+transcript are kept on your device. Transcription runs on your device. When iCloud is on,
+the note also syncs to your other devices through your own private iCloud (a private
+CloudKit zone that only your Apple ID can read); with iCloud off, it stays on this device
+only. It never goes to a server of ours. Deleting a note deletes it everywhere it synced.
+
+**Insights.** The Insights cards work out counts and averages from answers you have already
+written — for example this month so far against last month, your mood by weekday, or how
+often a habit was kept. It is arithmetic, worked out on your device, over your own journal.
+These cards involve no language model, upload nothing, use no account, and ask for no
+new permissions. It describes what happened on the same days — never why — and it is not
+advice. (The optional "Patterns" card this paragraph used to describe was retired in
+version 1.8, build 102.)
+
+**Gain Insight (optional, version 2.0).** On devices that support Apple Intelligence, the
+Insights tab can answer a question about your numbers. Nothing is sent until you tap Accept.
+Your question and short summaries of your numbers (streaks, averages, counts, and answers from
+the last few days) are given to Apple's on-device model. Paragraph answers, daily questions
+and photos are never sent. A question too large for the on-device model may be sent to Apple
+Private Cloud Compute, which Apple runs under its own privacy design
+(https://security.apple.com/blog/private-cloud-compute/). It never goes to a server of ours or
+to any other company's model. Your questions and answers are kept on your device only, and you
+can delete them one at a time or all at once. The model cannot change your journal.
 
 ## What we do NOT collect
 
 - No analytics, tracking, advertising identifiers, or third-party SDKs.
 - No usage telemetry sent to us.
-- No location data.
+- No location is sent to us, and none is stored in your journal. An approximate location (rounded) may be sent to Apple Weather for cloud cover, as described above.
 - Nothing transmitted to any server operated by us — because we operate none.
 
 ## Data sharing
@@ -66,7 +90,7 @@ You are always in control:
 - **Sign out** (in the app's About screen) returns you to the sign-in screen while
   leaving your journal safe in your iCloud.
 - **Delete account & all data** (in the app's About screen) permanently erases every
-  entry and custom field from your device and your iCloud. This cannot be undone.
+  entry, custom field and voice note from your device and your iCloud. This cannot be undone.
 - You can also delete the app and remove its iCloud data via iOS Settings → your name →
   iCloud → Manage Account Storage.
 
@@ -82,36 +106,3 @@ If this policy changes, the updated version will be posted at this same URL with
 ## Contact
 
 Questions about your privacy? Contact us at: **help@plainandsimple.app**
-
-<!--
-THIS FILE IS THE SOURCE, NOT THE PAGE. What users and App Store reviewers read is published
-from the `youcha-agent/daynightjournal-legal` repo (GitHub Pages). Change one, change both.
-
-Build 57, 2026-07-30 — address corrected from adaptiveagingsolutions@gmail.com to
-help@plainandsimple.app, the single address of record per `PlainAndSimple/lib/site.ts`, which
-requires that every privacy and support page and whatever App Store Connect cites must match
-it. The app now surfaces that address itself (the review prompt's support branch), so a
-privacy policy naming a personal Gmail was a live contradiction on an Apple-required page.
-The "Last updated" date moved with it, because this policy's own "Changes to this policy"
-section promises exactly that.
-
-DEPLOYED AND VERIFIED LIVE on 2026-07-30, all three paths returning the corrected text:
-  https://youcha-agent.github.io/daynightjournal-legal/privacy-policy   ← use this one
-  https://youcha-agent.github.io/daynightjournal-legal/Privacy-Policy   (legacy, see below)
-  https://youcha-agent.github.io/daynightjournal-legal/                 (root, now links out)
-
-⚠️ Two things were wrong beyond the address, and one is still open:
-
-1. The URL the runbook has always named — /privacy-policy — was returning **404**. The repo
-   held two identical extension-less files (`Privacy-Policy` and `Day & Night Journal -
-   Privacy Policy`) and nothing at the documented path. A `privacy-policy.html` now serves
-   there and renders properly.
-2. An extension-less file is served by GitHub Pages as `application/octet-stream`, so a
-   browser **downloads** it rather than displaying it. That is still true of the two legacy
-   paths; their *content* is now correct, but only /privacy-policy actually renders.
-
-STILL OWED (cannot be done or checked from this machine): confirm which URL App Store Connect
-has registered as the Privacy Policy URL, and point it at /privacy-policy. Also check the
-support email on the ASC listing and the Apple Developer account.
--->
-

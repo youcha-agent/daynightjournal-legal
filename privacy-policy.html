@@ -30,82 +30,66 @@
 <body>
 
 <h1>Privacy Policy — Day &amp; Night Journal</h1>
-<p class="updated">Last updated: August 22, 2026</p>
+<p class="updated">Last updated: October 12, 2026</p>
 
-<p>Day &amp; Night Journal (“the app,” “we,” “us”) is built to be private by design. This policy
-explains exactly what the app does and does not do with your information.</p>
+<p>Day &amp; Night Journal (“the app,” “we,” “us”) is built to be private by design. This policy explains exactly what the app does and does not do with your information.</p>
 
 <h2>The short version</h2>
-<p>We do not have a server. We never receive, see, store, sell, share, mine, or use your journal to
-train anything. Your data lives on your device and in <strong>your own private iCloud account</strong>
-— nowhere else.</p>
+
+<p>We do not have a server. We never receive, see, store, sell, share, mine, or use your journal to train anything. Your data lives on your device and in <strong>your own private iCloud account</strong> — nowhere else.</p>
 
 <h2>Information the app uses</h2>
-<p><strong>Your journal entries.</strong> Everything you type or select — prompts, notes, checklists,
-moods, water counts, and any custom fields you create — is stored locally on your device using
-Apple’s on-device database, and synced across your own Apple devices through your private iCloud
-(CloudKit) account. We have no access to this iCloud container; only you do, through your Apple ID.</p>
 
-<p><strong>Apple Health data (optional, read-only).</strong> If you choose to enable it, the app reads
-your sleep times, step count, and exercise minutes from Apple Health to automatically fill in the
-matching journal fields. This access is <strong>read-only</strong> — the app never writes to Apple
-Health. These values become entries in your own private journal and are synced only through your
-private iCloud, exactly like anything else you enter. They are never sent to us or any third party,
-and are <strong>never used for advertising, marketing, or data mining</strong>. You can turn Health
-off at any time in the iOS Settings app, and you can decline it entirely; the app works fully
-without it.</p>
+<p><strong>Your journal entries.</strong> Everything you type or select — prompts, notes, checklists, moods, water counts, and any custom fields you create — is stored locally on your device using Apple’s on-device database, and synced across your own Apple devices through your private iCloud (CloudKit) account. We have no access to this iCloud container; only you do, through your Apple ID.</p>
 
-<p><strong>Sign in with Apple.</strong> The app uses Sign in with Apple solely to gate access to your
-journal. We store only the anonymous, stable user identifier that Apple provides, on your device. We
-do not collect your name or email, we operate no account server, and we store no authentication
-tokens anywhere off your device.</p>
+<p><strong>Apple Health data (optional, read-only).</strong> If you choose to enable it, the app reads your sleep times, step count, exercise minutes, heart rate, resting heart rate, workouts, time in daylight, date of birth, and heart rate variability (HRV) from Apple Health. This access is <strong>read-only</strong> — the app never writes to Apple Health. What the app keeps from those reads stays on your device or in your own private iCloud. Journal fields filled from Health sync like anything else you enter. Protocols lines are worked out on this device and kept on this device. None of this is sent to us, and it is <strong>never used for advertising, marketing, or data mining</strong>. You can turn Health off at any time in the iOS Settings app, and you can decline it entirely; the app works fully without it.</p>
 
-<p><strong>Notifications.</strong> If you turn them on, the app schedules optional morning and
-evening reminders to journal, and a weekly look back, on your device. These are local notifications
-only — no push server is involved, their text is written on your device, and no information leaves
-your device to deliver them.</p>
+<p><strong>Apple Weather and approximate location (optional).</strong> If you turn Protocols on and allow location, the app sends an approximate location (rounded) to Apple Weather to get cloud cover for the morning-light target. That location is not stored in your journal and is not sent to us. With no location, or no answer from Apple Weather, the sky stays unknown.</p>
 
-<p><strong>Patterns (optional, and off until you turn it on).</strong> If you turn on “Patterns” in
-the Insights tab, the app compares numbers you have already written — sleep, mood, steps, habits —
-and tells you when two of them tended to move together. This is arithmetic, worked out on your
-device, over your own journal. No language model is involved, nothing is uploaded, no account is
-used, and it asks for no new permissions. You can turn it off again in the same place. It describes
-what happened together — never why — and it is not advice.</p>
+<p><strong>Sign in with Apple.</strong> The app uses Sign in with Apple solely to gate access to your journal. We store only the anonymous, stable user identifier that Apple provides, on your device. We do not collect your name or email, we operate no account server, and we store no authentication tokens anywhere off your device.</p>
+
+<p><strong>Notifications.</strong> If you turn them on, the app schedules optional morning and evening reminders to journal, and a weekly look back, on your device. These are local notifications only — no push server is involved, their text is written on your device, and no information leaves your device to deliver them.</p>
+
+<p><strong>Evening voice notes (optional).</strong> If you record a voice note, the audio and its transcript are kept on your device. Transcription runs on your device. When iCloud is on, the note also syncs to your other devices through your own private iCloud (a private CloudKit zone that only your Apple ID can read); with iCloud off, it stays on this device only. It never goes to a server of ours. Deleting a note deletes it everywhere it synced.</p>
+
+<p><strong>Insights.</strong> The Insights cards work out counts and averages from answers you have already written — for example this month so far against last month, your mood by weekday, or how often a habit was kept. It is arithmetic, worked out on your device, over your own journal. These cards involve no language model, upload nothing, use no account, and ask for no new permissions. It describes what happened on the same days — never why — and it is not advice. (The optional “Patterns” card this paragraph used to describe was retired in version 1.8, build 102.)</p>
+
+<p><strong>Gain Insight (optional, version 2.0).</strong> On devices that support Apple Intelligence, the Insights tab can answer a question about your numbers. Nothing is sent until you tap Accept. Your question and short summaries of your numbers (streaks, averages, counts, and answers from the last few days) are given to Apple’s on-device model. Paragraph answers, daily questions and photos are never sent. A question too large for the on-device model may be sent to Apple Private Cloud Compute, which Apple runs under its own privacy design (<a href="https://security.apple.com/blog/private-cloud-compute/">https://security.apple.com/blog/private-cloud-compute/</a>). It never goes to a server of ours or to any other company’s model. Your questions and answers are kept on your device only, and you can delete them one at a time or all at once. The model cannot change your journal.</p>
 
 <h2>What we do NOT collect</h2>
+
 <ul>
   <li>No analytics, tracking, advertising identifiers, or third-party SDKs.</li>
   <li>No usage telemetry sent to us.</li>
-  <li>No location data.</li>
+  <li>No location is sent to us, and none is stored in your journal. An approximate location (rounded) may be sent to Apple Weather for cloud cover, as described above.</li>
   <li>Nothing transmitted to any server operated by us — because we operate none.</li>
 </ul>
 
 <h2>Data sharing</h2>
-<p>We do not share your information with anyone, because we never have it. Your data syncs only
-through Apple’s iCloud under your own Apple ID, governed by
-<a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+
+<p>We do not share your information with anyone, because we never have it. Your data syncs only through Apple’s iCloud under your own Apple ID, governed by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
 
 <h2>Deleting your data</h2>
+
 <p>You are always in control:</p>
+
 <ul>
-  <li><strong>Sign out</strong> (in the app’s About screen) returns you to the sign-in screen while
-      leaving your journal safe in your iCloud.</li>
-  <li><strong>Delete account &amp; all data</strong> (in the app’s About screen) permanently erases
-      every entry and custom field from your device and your iCloud. This cannot be undone.</li>
-  <li>You can also delete the app and remove its iCloud data via iOS Settings → your name → iCloud →
-      Manage Account Storage.</li>
+  <li><strong>Sign out</strong> (in the app’s About screen) returns you to the sign-in screen while leaving your journal safe in your iCloud.</li>
+  <li><strong>Delete account &amp; all data</strong> (in the app’s About screen) permanently erases every entry, custom field and voice note from your device and your iCloud. This cannot be undone.</li>
+  <li>You can also delete the app and remove its iCloud data via iOS Settings → your name → iCloud → Manage Account Storage.</li>
 </ul>
 
 <h2>Children</h2>
+
 <p>The app is not directed at children and collects no personal information for any user.</p>
 
 <h2>Changes to this policy</h2>
-<p>If this policy changes, the updated version will be posted at this same URL with a new
-“Last updated” date.</p>
+
+<p>If this policy changes, the updated version will be posted at this same URL with a new “Last updated” date.</p>
 
 <h2>Contact</h2>
-<p>Questions about your privacy? Contact us at:
-<strong><a href="mailto:help@plainandsimple.app">help@plainandsimple.app</a></strong></p>
+
+<p>Questions about your privacy? Contact us at: <strong><a href="mailto:help@plainandsimple.app">help@plainandsimple.app</a></strong></p>
 
 <footer>
 Day &amp; Night Journal is made by Plain and Simple —
