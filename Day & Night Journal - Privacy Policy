@@ -1,6 +1,6 @@
 # Privacy Policy — Day & Night Journal
 
-_Last updated: October 12, 2026_
+_Last updated: October 13, 2026_
 
 Day & Night Journal ("the app," "we," "us") is built to be private by design. This
 policy explains exactly what the app does and does not do with your information.
@@ -30,11 +30,10 @@ out on this device and kept on this device. None of this is sent to us, and it i
 any time in the iOS Settings app, and you can decline it entirely; the app works fully
 without it.
 
-**Apple Weather and approximate location (optional).** If you turn Protocols on and
-allow location, the app sends an approximate location (rounded) to Apple Weather to get
-cloud cover for the morning-light target. That location is not stored in your journal
-and is not sent to us. With no location, or no answer from Apple Weather, the sky stays
-unknown.
+**Approximate location (optional).** If you turn Protocols on and allow location, the
+app uses an approximate location (rounded to about 1 km) on your device to work out
+sunrise for the morning-light window. That location never leaves your device, is not
+stored in your journal, and is not sent to us or to anyone else.
 
 **Sign in with Apple.** The app uses Sign in with Apple solely to gate access to your
 journal. We store only the anonymous, stable user identifier that Apple provides, on
@@ -74,7 +73,7 @@ can delete them one at a time or all at once. The model cannot change your journ
 
 - No analytics, tracking, advertising identifiers, or third-party SDKs.
 - No usage telemetry sent to us.
-- No location is sent to us, and none is stored in your journal. An approximate location (rounded) may be sent to Apple Weather for cloud cover, as described above.
+- No location is sent to us or to anyone else, and none is stored in your journal.
 - Nothing transmitted to any server operated by us — because we operate none.
 
 ## Data sharing
